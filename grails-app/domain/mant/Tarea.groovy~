@@ -1,0 +1,21 @@
+package mant
+
+class Tarea {
+    String descripcion
+    String lugar
+    User encargado
+    static constraints = {
+    }
+
+    static hasMany = [
+	comments: Comment,
+	]
+	
+    static constraints = {
+    	descripcion blank: false
+    }
+
+    public String toString(){
+	this.description
+    }
+}
